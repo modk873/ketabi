@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الفنون الطلابي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">معرض الفنون الطلابي</div>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#gallery">المعرض</a></li>
+                <li><a href="#submit">إضافة عمل</a></li>
+                <li><a href="#about">عن المعرض</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>مرحباً بكم في معرض الفنون الطلابي</h1>
+            <p>منصة لعرض إبداعاتكم الفنية ومشاريعكم</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>المعرض</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- سيتم إضافة الأعمال الفنية هنا عبر JavaScript -->
+            </div>
+        </section>
+
+        <section id="submit" class="submit-work">
+            <h2>إضافة عمل فني جديد</h2>
+            <form id="artworkForm">
+                <div class="form-group">
+                    <label for="title">عنوان العمل</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="artist">اسم الطالب</label>
+                    <input type="text" id="artist" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">وصف العمل</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">صورة العمل</label>
+                    <input type="file" id="image" accept="image/*" required>
+                </div>
+                <button type="submit">إضافة العمل</button>
+            </form>
+        </section>
+
+        <section id="about" class="about">
+            <h2>عن المعرض</h2>
+            <p>معرض الفنون الطلابي هو منصة إلكترونية تهدف إلى دعم وتشجيع الإبداع الفني لدى الطلاب. يمكن للطلاب عرض أعمالهم الفنية ومشاريعهم الإبداعية في هذا المعرض الافتراضي.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 معرض الفنون الطلابي</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
